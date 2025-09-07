@@ -1,22 +1,68 @@
-# inventory-management-system-with-pos
-A Full-stack web application in React and Laravel REST API. Which includes Category, Brand, Product, Employee management, 
-Also includes employee attendance and payment system, and point of sell including invoice. 
-We also used JWT authentication and integrate Razor Pay gateway and SSL payment gateway for online payment.
+# Inventory Management System with POS
 
-[![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript&link=https://github.com/joynalam67598)](https://github.com/joynalam67598) 
-[![React](https://img.shields.io/badge/-React-white?style=flat-square&logo=react&link=https://github.com/joynalam67598)](https://github.com/joynalam67598) 
-[![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&link=https://github.com/joynalam67598)](https://github.com/joynalam67598) 
-[![MaterialUi](https://img.shields.io/badge/-MaterialUI-blue?style=flat-square&logo=materialui&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![Rest_API](https://img.shields.io/badge/-Rest_API-yellow?style=flat-square&logo=api&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![Php](https://img.shields.io/badge/-PHP-gray?style=flat-square&logo=php&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![Laravel](https://img.shields.io/badge/-Laravel-white?style=flat-square&logo=laravel&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![MySql](https://img.shields.io/badge/-MySql-cyan?style=flat-square&logo=mysql&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-<br/>
-[![Razor_Pay](https://img.shields.io/badge/-Razor_Pay-orange?style=flat-square&logo=razorPay&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![SSLCommerz](https://img.shields.io/badge/-SSLCommerz-green?style=flat-square&logo=SSLCOMMERZ&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![React_Cart](https://img.shields.io/badge/-React_Cart-orange?style=flat-square&logo=reactCart&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![React_To_Print](https://img.shields.io/badge/-React_To_Print-green?style=flat-square&logo=api&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-[![INVOICE](https://img.shields.io/badge/-INVOICE-orange?style=flat-square&logo=invoice&link=https://github.com/joynalam67598)](https://github.com/joynalam67598)
-<br/>
-<br/>
-#Website Link : https://joynalam67598.github.io/imswpos/
+A web-based **Inventory Management System with Point of Sale (POS)** built using **Laravel**.  
+This system helps businesses manage products, stock, sales, purchases, customers, employees, and expenses in one place.
+
+---
+
+## Features
+- Product, Category & Brand Management  
+- POS (Point of Sale) with real-time stock updates  
+- Customer & Employee Management  
+- Attendance & Expense Tracking  
+- Sales Reports & Order History  
+- Secure Authentication & Role Management  
+- API Endpoints for integration with external services  
+
+---
+
+## Tech Stack
+**Backend:** Laravel (PHP), Eloquent ORM, PHPUnit  
+**Frontend:** Blade, JavaScript, jQuery, Bootstrap  
+**Database:** MySQL / MariaDB  
+**Build Tools:** Laravel Mix (Webpack), npm  
+**Version Control:** Git  
+
+---
+
+##  Installation
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/heckur08/inventory-management-system-with-pos.git
+2. Navigate to project folder
+    ```bash
+    cd inventory-management-system-with-pos/inventory-management-system-api
+3. Install PHP dependencies
+    ```bash
+    composer install
+4. Install JS dependencies
+    ```bash
+    npm install && npm run dev
+5. Setup environment variables
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+6. Run migrations & seeders
+    ```bash
+    php artisan migrate --seed
+7. Start the local server
+    ```bash
+    php artisan serve
+
+## Usage
+- Access the app at `http://127.0.0.1:8000`  
+- Login/Register to use POS and inventory features  
+- Admin can manage products, employees, and reports  
+- Employees can record sales and expenses  
+
+## API Overview
+The system includes a REST API with authentication.  
+Main modules include:  
+- **/api/products** → Manage products  
+- **/api/customers** → Manage customers  
+- **/api/orders** → Handle orders and POS  
+- **/api/employees** → Employee data & attendance  
+- **/api/expenses** → Expense tracking  
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
